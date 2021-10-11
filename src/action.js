@@ -28,7 +28,7 @@ fetch(url, { method: 'POST', headers, body: JSON.stringify(body) })
 .then(async (res) => {
     if (res.ok) process.exit(0)
     else {
-        core.error(`Invalid response! GOT ${res.status}. Message: ${await res.json()}`);
+        core.error(`Invalid response! GOT ${res.status}. Message: ${await res.text()}`);
         process.exit(1);
     }
 })
