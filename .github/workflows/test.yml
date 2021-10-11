@@ -3,7 +3,7 @@ name: Test
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   test:
@@ -11,4 +11,3 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./
-      
