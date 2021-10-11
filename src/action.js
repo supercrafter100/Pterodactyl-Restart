@@ -1,4 +1,5 @@
 const core = require("@actions/core");
+const fetch = require('node-fetch');
 
 if (!core.getInput('PTE_PANEL_URL')) {
     core.error('No pterodactyl URL was supplied');
