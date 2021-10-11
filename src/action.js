@@ -26,6 +26,9 @@ const url = `${core.getInput('PTE_PANEL_URL')}/api/client/servers/${core.getInpu
 fetch(url, { headers, body: JSON.stringify(body) })
 .then(async (res) => {
     if (res.ok) process.exit(0)
-    else core.error(`Invalid response! GOT ${res.status}. Message: ${await res.json()}`)
+    else {
+        core.error(`Invalid response! GOT ${res.status}. Message: ${await res.json()}`);
+        process.exit(1);
+    }
 })
 

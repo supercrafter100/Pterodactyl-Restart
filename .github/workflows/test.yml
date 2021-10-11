@@ -11,3 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./
+        with:
+          PTE_PANEL_URL: 'https://panel.supercrafter100.com/'
+          PTE_BEARER_TOKEN: ${{ secrets.PTE_BEARER_TOKEN }}
+          PTE_PANEL_ID: ${{ secrets.PTE_PANEL_ID }}
