@@ -5591,7 +5591,7 @@ const body = {
 }
 
 const url = `${core.getInput('PTE_PANEL_URL')}/api/client/servers/${core.getInput('PTE_PANEL_ID')}/power`;
-fetch(url, { headers, body: JSON.stringify(body) })
+fetch(url, { method: 'POST', headers, body: JSON.stringify(body) })
 .then(async (res) => {
     if (res.ok) process.exit(0)
     else {
