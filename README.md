@@ -28,7 +28,7 @@ jobs:
 
 ## Variables
 
-| PTE_PANEL_URL    	| The url to your pterodactyl panel. Make sure it doesn't end with "/" as it will break.                                                                  	|
-|------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| PTE_BEARER_TOKEN 	| The api token you generated for your account. You can create one at `https://panel.supercrafter100.com/account/api`                                     	|
+| Variable          | Description                                                                                                                                                                       |
+| -----------------	| --------------------------------------------------------------------------------------------------------------------------------------------------------	                        |
+| PTE_BEARER_TOKEN 	| The api token you generated for your account. You can create one at `https://panel.supercrafter100.com/account/api`                                                               |
 | PTE_PANEL_ID     	| The ID of the server you want to restart. You can find this in the url when viewing a server Ex: `https://panel.supercrafter100.com/server/19afbc48`, `19afbc48` will be the ID 	|
