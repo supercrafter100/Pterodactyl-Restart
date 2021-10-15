@@ -32,6 +32,7 @@ try {
     url = new URL(`${panelUrl}/api/client/servers/${encodeURIComponent(panelId)}/power`);
 } catch(e) {
     core.error('Misformed URL');
+    process.exit(1);
 }
 
 //  Preparing 
